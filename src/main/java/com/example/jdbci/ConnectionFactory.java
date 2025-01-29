@@ -9,9 +9,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ConnectionFactory {
-    private static final String URL = "jdbc:postgresql://localhost:5432/training_jdbc";
+    //private static final String URL = "jdbc:postgresql://localhost:5432/training_jdbc";
+    private static final String URL = "jdbc:postgresql://localhost:5432/jdbcintro_db";
     private static final String USER = "postgres";
-    private static final String PASSWORD = "root";
+    //private static final String PASSWORD = "root";
+    private static final String PASSWORD = "postgre";
 
     public static Connection connection() throws SQLException {
         return DriverManager.getConnection(URL,USER,PASSWORD);
